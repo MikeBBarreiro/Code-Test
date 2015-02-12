@@ -1,31 +1,16 @@
-## name of project
-### Code Badges
-build status icon
-coverage status icon
-
-### Screenshots
-![Image1](https://raw.githubusercontent.com/nss-cohort-2014-06-07/express-template/master/docs/screenshots/one.jpg)
-![Image2](https://raw.githubusercontent.com/nss-cohort-2014-06-07/express-template/master/docs/screenshots/two.jpg)
+## Code-Test
 
 ### Description
-write a description about your project
+Just a code test on bootstrap
 
 ### Models
 ```
 Model 1
 ```
 
-```
-Model 2
-```
-
 ### Database
 ```
 Collecion 1
-```
-
-```
-Collection 2
 ```
 
 ### Features
@@ -40,7 +25,7 @@ $ npm test
 ```
 
 ### Contributors
-- [Chyld Medford](https://github.com/chyld)
+- [Michael Barreiro](https://github.com/mikebbarreiro)
 
 ### License
 [MIT](LICENSE)
