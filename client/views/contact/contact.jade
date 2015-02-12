@@ -1,1 +1,27 @@
-h2 Contact Page
+.row
+  .col-xs-4
+  .col-xs-4
+    .Button.btn.btn-primary.hvr-wobble-horizontal(ng-click='toggleContact()') Toggle Contact Info
+  .col-xs-4
+
+.row
+  .col-sm-4
+  .col-sm-4
+    //- Panel
+    .panel.panel-default.animated.bounceInUp(ng-hide='hideContact')
+      //- Panel Header
+      .panel.panel-heading(ng-hide='hideContact')
+        h4 Contact Info      
+      //- Panel Body
+      .panel-body(ng-hide='hideContact')
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+        p Phone Number:  
+          span 999-999-9999
+        
+        p Email Info: 
+          span blah_blahblah@blah.com
+          
+        p Adress: 
+          span 443 Ago Vita Ad Plenissimam Dr.
+  .col-sm-4
