@@ -2,16 +2,15 @@
   'use strict';
 
   angular.module('mean-template', ['ngRoute', 'LocalForageModule'])
-  .config(['$routeProvider', '$httpProvider', '$localForageProvider', function($routeProvider, $httpProvider, $localForageProvider){
+  .config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider){
     $routeProvider
     .when('/', {templateUrl:'/views/home/home.html', controller:'HomeCtrl'})
-    .when('/register', {templateUrl:'/views/register/register.html', controller:'RegisterCtrl'})
-    .when('/login',    {templateUrl:'/views/login/login.html',       controller:'LoginCtrl'})
-    .when('/logout',   {templateUrl:'/views/logout/logout.html',     controller:'LogoutCtrl'})
+    // .when('/register', {templateUrl:'/views/register/register.html', controller:'RegisterCtrl'})
+    // .when('/login',    {templateUrl:'/views/login/login.html',       controller:'LoginCtrl'})
+    // .when('/logout',   {templateUrl:'/views/logout/logout.html',     controller:'LogoutCtrl'})
     .otherwise({redirectTo:'/'});
 
-    $httpProvider.interceptors.push('HttpInterceptor');
-    $localForageProvider.config({name:'mean-template', storeName:'cache', version:1.0});
+    // $httpProvider.interceptors.push('HttpInterceptor');
+    // $localForageProvider.config({name:'mean-template', storeName:'cache', version:1.0});
   }]);
 })();
-
