@@ -1,6 +1,6 @@
 //- data-ride is very important, this is what makes the actually carousel slide
   
-#carousel-example-generic.carousel.slide(data-ride='carousel')
+#carousel-example-generic.carousel.slide.animated.fadeIn(data-ride='carousel')
   // Indicators which enables the little dots
   ol.carousel-indicators
     li.active(data-target='#carousel-example-generic', data-slide-to='0')
@@ -11,16 +11,16 @@
     .item.active
       img(src='/assets/img/Michael.png', alt='me')
       .carousel-caption
-        h3 Hello and Welcome
-        | I am a young UI/UX Front End Web Developer just looking to write some awesome code and make some awesome sites!
+        h4 Hello and Welcome
+        p.cP I am a young UI/UX Front End Web Developer just looking to write some awesome code and make some awesome sites!
     .item
       img(src='/assets/img/me copy.jpg', alt='meTwo')
       .carousel-caption
-        | My name is Michael E Barreiro and I am a UI/UX Front-End Web Developer
+        p.cP My name is Michael E Barreiro and I am a UI/UX Front-End Web Developer
     .item
       img(src='/assets/img/ShowShooshi.png', alt='Sushi')
       .carousel-caption
-        | This is ShowShooshi, My first solo capston exam project demoed to the public at the end of first semester of Nashville Software School
+        p.cP This is ShowShooshi, My first solo capston exam project demoed to the public at the end of first semester of Nashville Software School
   // Controls
   a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
     span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
@@ -28,3 +28,20 @@
   a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
     span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
     span.sr-only Next
+
+h1 More Info
+  
+.row 
+  .col-sm-4
+    a(href='https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button')
+      .Div1.bounce-to-bottom
+        i.fa.fa-linkedin-square
+  .col-sm-4
+    a(href='https://github.com/MikeBBarreiro')
+      .Div2.bounce-to-bottom
+        i.fa.fa-github-square
+  .col-sm-4
+    a(href='https://twitter.com/l8MikeBl8')
+      .Div3.bounce-to-bottom
+        i.fa.fa-twitter-square
+  

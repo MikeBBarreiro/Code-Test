@@ -20,8 +20,151 @@
 
 body{
   background-color: @RoyalBlue;
+  background-image: url('/assets/img/footer_lodyas.png');
+  // background-size: cover;
+}
+
+h1{
+  text-align: center;
+}
+
+a{
+  color: white;
 }
 
 input.ng-invalid, select.ng-invalid{
   background-color: @RED;
+}
+
+
+
+//--------- Media Queries -----------//
+
+@media screen and (max-width: 420px){
+  .cP{
+   font-size: 15px;
+  }
+ }
+//=-----Media Queries End--------=//
+
+
+
+//--------- More Info Div's -------//
+
+ .Div1{
+   width: 100%;
+   margin: 5px;
+   height: 250px;
+   margin-top: 50px;
+   border: 1px solid black;
+   border-radius: 5px;
+   background-color: RGBA(74, 109, 225, 0.5);
+ }
+
+ .Div2{
+   width: 100%;
+   margin: 5px;
+   height: 250px;
+   margin-top: 50px;
+   border: 1px solid black;
+   border-radius: 2px;
+   background-color: RGBA(74, 109, 225, 0.5);
+ }
+
+ .Div3{
+
+   width: 100%;
+   margin: 5px;
+   height: 250px;
+   margin-top: 50px;
+   margin-bottom: 30px;
+   border: 1px solid black;
+   border-radius: 2px;
+   background-color: RGBA(74, 109, 225, 0.5);
+ }
+
+ .fa-linkedin-square{
+   font-size: 100px;
+   margin-left: 40%;
+   margin-top: 65px;
+ }
+
+ .fa-github-square{
+   font-size: 100px;
+   margin-left: 40%;
+   margin-top: 65px;
+ }
+
+ .fa-twitter-square{
+   font-size: 100px;
+   margin-left: 40%;
+   margin-top: 65px;
+ }
+
+ //=----- End More Info Div's-------=//
+
+
+//------- HOVER EFFECTS ------//
+ .bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.bounce-in:hover, .bounce-in:focus, .bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.bounce-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #F74D63;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.bounce-to-bottom:hover, .bounce-to-bottom:focus, .bounce-to-bottom:active {
+  color: black;
+}
+.bounce-to-bottom:hover:before, .bounce-to-bottom:focus:before, .bounce-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
