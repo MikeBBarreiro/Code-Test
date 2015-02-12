@@ -1,9 +1,11 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300);
 body {
   background-color: #4a6de1;
   background-image: url('/assets/img/footer_lodyas.png');
 }
 h1 {
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 a {
   color: white;
@@ -14,7 +16,7 @@ select.ng-invalid {
 }
 @media screen and (max-width: 420px) {
   .cP {
-    font-size: 15px;
+    font-size: 0px;
   }
 }
 .Div1 {
@@ -47,17 +49,17 @@ select.ng-invalid {
 }
 .fa-linkedin-square {
   font-size: 100px;
-  margin-left: 40%;
+  margin-left: 39%;
   margin-top: 65px;
 }
 .fa-github-square {
   font-size: 100px;
-  margin-left: 40%;
+  margin-left: 39%;
   margin-top: 65px;
 }
 .fa-twitter-square {
   font-size: 100px;
-  margin-left: 40%;
+  margin-left: 39%;
   margin-top: 65px;
 }
 .bounce-in {
