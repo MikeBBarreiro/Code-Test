@@ -1,4 +1,30 @@
-h3 The MEAN Stack
-ul(ng-show='mean')
-  li(ng-repeat='technology in mean') {{technology}}
-
+//- data-ride is very important, this is what makes the actually carousel slide
+  
+#carousel-example-generic.carousel.slide(data-ride='carousel')
+  // Indicators which enables the little dots
+  ol.carousel-indicators
+    li.active(data-target='#carousel-example-generic', data-slide-to='0')
+    li(data-target='#carousel-example-generic',        data-slide-to='1')
+    li(data-target='#carousel-example-generic',        data-slide-to='2')
+  // Wrapper for slides
+  .carousel-inner(role='listbox')
+    .item.active
+      img(src='/assets/img/Michael.png', alt='me')
+      .carousel-caption
+        h3 Hello and Welcome
+        | I am a young UI/UX Front End Web Developer just looking to write some awesome code and make some awesome sites!
+    .item
+      img(src='/assets/img/me copy.jpg', alt='meTwo')
+      .carousel-caption
+        | My name is Michael E Barreiro and I am a UI/UX Front-End Web Developer
+    .item
+      img(src='/assets/img/ShowShooshi.png', alt='Sushi')
+      .carousel-caption
+        | This is ShowShooshi, My first solo capston exam project demoed to the public at the end of first semester of Nashville Software School
+  // Controls
+  a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+    span.sr-only Previous
+  a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+    span.sr-only Next

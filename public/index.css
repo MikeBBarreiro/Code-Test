@@ -1,0 +1,7 @@
+body {
+  background-color: #4a6de1;
+}
+input.ng-invalid,
+select.ng-invalid {
+  background-color: #ff4136;
+}
